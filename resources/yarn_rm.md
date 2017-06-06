@@ -65,10 +65,10 @@
 10. RM updates the Job History server
 
 
-![Alt text]("resources/labs/RM1.png?=raw")
-![Alt text]("resources/labs/RM2.png?=raw")
-![Alt text]("resources/labs/RM3.png?=raw")
-![Alt text]("resources/labs/RM4.png?=raw")
+![Alt text](labs/RM1.png?=raw")
+![Alt text](labs/RM2.png?=raw")
+![Alt text](labs/RM3.png?=raw")
+![Alt text](/labs/RM4.png?=raw")
 
 ---
 <div style="page-break-after: always;"></div>
