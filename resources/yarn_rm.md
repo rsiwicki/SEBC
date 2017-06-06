@@ -22,11 +22,8 @@
 
 ## <center> <a name="mrv2_review"/> YARN/MRv2: Design
 
-### <center> Graphic overview
-
-<center><img src="http://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/yarn_architecture.gif"></center>
-
 ---
+
 <div style="page-break-after: always;"></div>
 
 ## <center> YARN (MRv2 included): Roles
