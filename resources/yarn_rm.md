@@ -16,17 +16,6 @@
 ---
 <div style="page-break-after:always;"></div>
 
-## <center> The MapReduce service (MRv1)
-
-* JobTracker responsibilities
-    * Schedule jobs
-    * Monitor TaskTracker processes
-    * Update jobs status
-    * Cache and serve recent job history
-* TaskTracker responsbilities
-    * Provide a pre-determined number of mapper and reducer slots
-    * Slots are child JVM processes
-    * Slot count per node is based on cores, "spindles", and <i>workload estimate</i>
 
 ---
 <div style="page-break-after: always;"></div>
@@ -122,6 +111,9 @@
 3. <a href="#dynamic_prioritization">Dynamic Resource Pools for YARN</a>
     * Weight resources among pools by scheduling rules
 
+DEMO OF CDH RESOURCE MANAGEMENT FEATURES
+
+
 ---
 <div style="page-break-after: always;"></div>
 
@@ -162,22 +154,6 @@
     * To compensate for stale data, admission control is soft
 * Impala favors running more tasks over preserving headroom
     * Work to improve this decision-making is ongoing
-
----
-<div style="page-break-after: always;"></div>
-
-## <center> <a name="rm_dynamic_prioritization"/> A Word on Dynamic Prioritization
-
-* <strong>L</strong>ow-<strong>L</strong>atency <strong>A</strong>pplication <strong>MA</strong>ster ([LLAMA](http://cloudera.github.io/llama/)) for Impala
-    * Released with CDH5 as a beta component
-    * Concept: run all Impala queries through one AM
-        * Interaction with the RM is not NRT-friendly
-    * Project dropped after C5.5
-* The objectives are the same
-    * Balance low-latency queries with batch processing
-    * Find more efficient means to dispatch multiple scheduler queues
-    * Devise opportunistic processing schemes for more efficient utilization
-    * Improve resource estimation (e.g., Impala's <code>COMPUTE STATS</code>)
 
 ---
 <div style="page-break-after: always;"></div>
