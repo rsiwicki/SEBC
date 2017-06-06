@@ -24,6 +24,13 @@
 
 ---
 
+## <center> YARN Overview
+
+![Alt text](labs/RM1.png?=raw")
+![Alt text](labs/RM2.png?=raw")
+![Alt text](labs/RM3.png?=raw")
+![Alt text](labs/RM4.png?=raw")
+
 <div style="page-break-after: always;"></div>
 
 ## <center> YARN (MRv2 included): Roles
@@ -62,10 +69,6 @@
 10. RM updates the Job History server
 
 
-![Alt text](labs/RM1.png?=raw")
-![Alt text](labs/RM2.png?=raw")
-![Alt text](labs/RM3.png?=raw")
-![Alt text](labs/RM4.png?=raw")
 
 ---
 <div style="page-break-after: always;"></div>
