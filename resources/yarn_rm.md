@@ -71,12 +71,6 @@
 ---
 <div style="page-break-after: always;"></div>
 
-
-
-
----
-<div style="page-break-after: always;"></div>
-
 ## <center>YARN vs. MRv1 or Spark Standalone</center>
 
 * Better resource scalability and utilization
