@@ -33,6 +33,20 @@
 
 <div style="page-break-after: always;"></div>
 
+## <center> YARN Job Control
+
+1. Client submits a job
+2. RM identifies the appropriate AM and loads it
+3. AM requests data blocks via the NameNode
+4. AM requests container/executor resources via the RM
+5. RM reports available resources
+6. AM asks NodeManagers for resources using RM access token
+9. AM releases each container upon task completion, notifies the RM
+10. RM updates the Job History server
+
+
+<div style="page-break-after: always;"></div>
+
 ## <center> YARN (MRv2 included): Roles
 
 * Resource Manager
@@ -57,16 +71,6 @@
 ---
 <div style="page-break-after: always;"></div>
 
-## <center> YARN Job Control
-
-1. Client submits a job
-2. RM identifies the appropriate AM and loads it
-3. AM requests data blocks via the NameNode
-4. AM requests container/executor resources via the RM
-5. RM reports available resources
-6. AM asks NodeManagers for resources using RM access token
-9. AM releases each container upon task completion, notifies the RM
-10. RM updates the Job History server
 
 
 
