@@ -6,8 +6,8 @@
 ---
 
 # <center> Services Enablement Boot Camp </center>
-## <center> June 5-9, 2017 </center>
-## <center> London, UK</center>
+## <center> Sept 16-20, 2017 </center>
+## <center> Frankfurt</center>
 
 ---
 <div style="page-break-after: always;"></div>
