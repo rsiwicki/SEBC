@@ -24,7 +24,6 @@
 ## <center> <a name="instructor"/> Instructors & Students
 
 * Robert Siwicki (Senior Solutions Architect) - rsiwicki
-* Michael O'Kane (Senior Solutions Architect)
 * Please introduce yourselves:
     * Name
     * Region & Role
