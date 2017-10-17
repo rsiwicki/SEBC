@@ -115,7 +115,7 @@
 3. <a href="#dynamic_prioritization">Dynamic Resource Pools for YARN</a>
     * Weight resources among pools by scheduling rules
 
-DEMO OF CDH RESOURCE MANAGEMENT FEATURES
+
 
 
 ---
