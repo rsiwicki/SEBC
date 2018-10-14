@@ -6,8 +6,8 @@
 ---
 
 # <center> Services Enablement Boot Camp </center>
-## <center> Sept 16-20, 2017 </center>
-## <center> Frankfurt</center>
+## <center> Sept 15-19, 2018 </center>
+## <center>Madrid</center>
 
 ---
 <div style="page-break-after: always;"></div>
@@ -23,7 +23,8 @@
 
 ## <center> <a name="instructor"/> Instructors & Students
 
-* Robert Siwicki (Senior Solutions Architect) - rsiwicki
+* Robert Siwicki (Senior Solutions Architect) - rsiwicki@cloudera.com
+* Rafael Arana (Principal Solutions Archiect) - rafael.arana@cloudera.com
 * Please introduce yourselves:
     * Name
     * Region & Role

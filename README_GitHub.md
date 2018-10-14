@@ -27,7 +27,7 @@ This last step synchronizes your git repo to GitHub. If you created files on Git
 Finally, you can push your course to GitHub:
 
 * `$ git add .`
-* `$ git commit -m "Pushing course materials for Madrid, March 2017 session"`
+* `$ git commit -m "Pushing course materials for Madrid, October 2018 session"`
 * `$ git push -u upstream master`
 
 Browse your GitHub version to make sure things transferred.
