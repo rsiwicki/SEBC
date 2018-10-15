@@ -195,11 +195,11 @@ Parcels are [CM-specific code blobs](https://github.com/cloudera/cm_ext/wiki/Par
 ## <center> CM Install Lab - Prepare EC2 or other instances
 
 * If possible, use the closest available AWS data center
-* Create five `m3.xlarge` nodes
+* Create five `m3.xlarge` nodes or closest equivalent
   * Do not use spot instances
   * **Set your volume space to the maximum free amount**
     * The AWS default per instance (8 GB) is not enough.
-* For GCE, use `n1-highmen-2` nodes
+* For GCE, use `n1-highmen-2` nodes or closest equivalent
   * Do not use preemptible instances
 * Make sure your AMI is based on a Cloudera-supported OS
   * Requirements are listed per release on the download page
@@ -288,10 +288,10 @@ or [here for MySQL](http://www.cloudera.com/documentation/enterprise/latest/topi
 <div style="page-break-after: always;"></div>
 
 ## <center> CM/CDH Install Lab
-## <center> Path B install using Cloudera 5.8.3
+## <center> Path B install using Cloudera 5.13.x
 
 [The full rundown is
-here](http://www.cloudera.com/documentation/enterprise/5-8-x/topics/cm_ig_install_path_b.html#concept_qyv_bt1_v5)
+here](https://www.cloudera.com/documentation/enterprise/5-13-x/topics/cm_ig_install_path_b.html)
 
 Notice that you must locate the correct repo version. The default
 repo is the latest available version.
