@@ -71,51 +71,18 @@
 ---
 <div style="page-break-after: always;"></div>
 
-## <center>YARN vs. MRv1 or Spark Standalone</center>
-
-* Better resource scalability and utilization
-  * Especially for very large clusters
-* Better performance for certain, well-known use cases
-  * E.g., a large multitenant cluster running many small jobs
-  * Isolating resources for multiple engines
-  * Centralized logging
-* The Original Vision: one RM to cover all processing requirements
-  * RM HA is available
-* Multiple mutli-tenant models possible
-  * Node labeling: assigning specific tasks to specific hardware
-  * Custom, pluggable classifiers for auditing and reporting
-
----
-<div style="page-break-after: always;"></div>
-
-## <center> <a name="migrating_mrv1_mrv2"/> Migrating MRv1-oriented applications to MRv2
-
-* YARN is backward-compatible to MapReduce
-  * Doesn't mean MRv1 programs are YARN-aware
-* Read <a href="http://blog.cloudera.com/blog/2014/04/apache-hadoop-yarn-avoiding-6-time-consuming-gotchas/">Jeff Bean's blog post on common gotchas</a>, including:
-    * Containers are not a drop-in replacement for slots
-    * Hard to make an [apples-to-apples performance comparison] (http://blog.cloudera.com/blog/2014/02/getting-mapreduce-2-up-to-speed/)
-    * JVM heap calculations are different
-    * The RM has one log for all process engines, not just MRv2
-        * Messages are more generic
-
----
-<div style="page-break-after: always;"></div>
-
 ## <center> <a name="RM_overview"/>Resource Management for the Cluster
 
 <p><i>Managing resources cluster-wide is divided into three areas</i></p>
 
 1. <a href="#rm_service_isolation">Service-level isolation</a>
     * Sets minimum resources for all cluster services, including YARN
-    * E.g., HDFS, HBase, Impala, Search, MRv1
+    * E.g., HDFS, HBase, Impala, Search
 2. <a href="#admission_control">Admission Control for Impala</a>
     * Resource priority based on request, service type
     * Prevent memory overruns
 3. <a href="#dynamic_prioritization">Dynamic Resource Pools for YARN</a>
     * Weight resources among pools by scheduling rules
-
-
 
 
 ---

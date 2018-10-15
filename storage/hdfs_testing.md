@@ -67,35 +67,8 @@
 ---
 <div style="page-break-after: always;"></div>
 
-## <center> <a name="hdfs_c5"/> C5 Goals for HDFS
 
-Strategy for storage use cases in C5:
 
-* Plan for systems with larger RAM complements
-* Customers need faster, more comprehensive backup tools
-* Customers want more data recovery options
-* Customers want more (open source) client access options
-
----
-<div style="page-break-after: always;"></div>
-
-## <center> Key HDFS Features in C5
-
-* <a href="#hdfs_dir_caching">Directory caching </a>
-* <a href="#hdfs_dir_snapshots"> Directory snapshots </a>
-* <a href="#nfs_gateway"> NFS Gateway</a>
-* <a href="#hdfs_backups"/>Backups
-
----
-<div style="page-break-after: always;"></div>
-
-## <center> <a name="hdfs_dir_caching"/> Directory caching: Use case
-### <center> Repeated joins on a small table (cache effect)
-
-<img src="http://blog.cloudera.com/wp-content/uploads/2014/08/hdfs-cache-f1.jpg">
-
----
-<div style="page-break-after: always;"></div>
 
 ## <center> Problem: Performance on Repeated Joins
 
@@ -121,8 +94,7 @@ Adds cache locality to NN reports<p>
     * In-memory storage is off-heap: no heavy impact on DataNodes
     * The admin can also limit the number of replicas for caching
 * Local clients, such as `impalad`, can read caches locally 
-    * Short-circuit read (SCR) API
-    * Zero-copy read (ZCR) API
+
 
 ---
 <div style="page-break-after: always;"></div>
@@ -165,19 +137,6 @@ $ sudo -u hdfs hdfs dfsadmin -report
 
 ---     
 <div style="page-break-after: always;"></div>
-
-## <center> <a name="scr_and_zcr"/> Technical Notes on SCR and ZCR
-
-* General advice: take time to map key upstream features to their [JIRAs] (https://issues.apache.org/jira)
-* [Short-circuit Reads] (https://issues.apache.org/jira/browse/HDFS-2246)
-    * Clients can examine a DataNode's process map to find cached blocks
-    * Based on [file descriptor passing](http://poincare.matf.bg.ac.rs/~ivana/courses/tos/sistemi_knjige/pomocno/apue/APUE/0201433079/ch17lev1sec4.html), AKA short-circuit reads.
-    * [Enabled in CM by default](http://www.cloudera.com/content/cloudera/en/documentation/core/latest/topics/admin_hdfs_short_circuit_reads.html)
-* There is also zero-copy Read
-    * [Uses `mmap()` to read system page$](https://issues.apache.org/jira/browse/HDFS-4953)
-    * Clients can implement the [API](https://issues.apache.org/jira/browse/HDFS-5191)
-* Upstream JIRAs 
-    * Write caching: [HDFS-5851](https://issues.apache.org/jira/browse/HDFS-5851)
 
 ---    
 <div style="page-break-after: always;"></div>
