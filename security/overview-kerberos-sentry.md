@@ -87,7 +87,7 @@
 * <a href="#hdfs_perms_acls">HDFS permissions & ACLs</a>
     * File permissions for user-group-world may be too simple
     * You must support a list of groups, not just one
-* [Apache Sentry (incubating)](https://sentry.incubator.apache.org/)
+* [Apache Sentry](https://sentry.incubator.apache.org/)
     * Protects data objects (`server, database, table, URI`) that are projected onto file content
     * Maps Linux/LDAP groups to roles that are configured with access privileges
 
@@ -145,8 +145,6 @@
   * Cloudera Search uses `policy.ini` files
 * Initial Sentry behavior: all access is denied
   * Rules are exceptions to default behavior
-* Next step: synchronizing Sentry & HDFS
-    * Goal: automate writing ACLs for grants and revocations
 * A fully-formed [config example is here](http://www.cloudera.com/documentation/enterprise/latest/topics/cdh_sg_sentry.html#concept_iw1_5dp_wk_unique_1)
 * You can also watch a short [video overview here](http://vimeo.com/79936560)
 
