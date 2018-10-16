@@ -6,7 +6,7 @@
 ---
 <div style="page-break-after: always;"></div>
 
-# <center> Challenges - February 17, 2017 - Singapore, Singapore
+# <center> Challenges - October 19, 2018 - Madrid
 
 * Overview
     * Build a CM-managed CDH cluster and secure it
@@ -49,16 +49,13 @@
 ---
 <div style="page-break-after: always;"></div>
 
-## <center> Challenge 1: Install a MySQL server
+## <center> Challenge 1: Install a MySQL or MariaDB server
 
-* Create the Issue `Install MySQL`
+* Create the Issue `Install Database`
 * Assign the Issue to yourself and label it `started`
-* Install a MySQL 5.5.x server on the node you listed first
-    * Use the YUM repository available at `dev.mysql.com`
-    * Copy `/etc/yum.repos.d/mysql-community.repo` to `challenges/labs/1_mysql-community.repo.md`
+* Install a compatible MySQL or MariaDB server on the node you listed first
 * On all cluster nodes
     * Install the MySQL client package and JDBC connector jar
-* Start the `mysqld` service
 * Create the following databases
     * `scm`
     * `rman`
@@ -68,8 +65,8 @@
     * `sentry`
 * Put the following in the file `challenges/labs/1_mysql.md`
     * The hostname of your MySQL node 
-    * The command and output for `mysql --version`
-    * The command and output for listing MySQL databases 
+    * The command screenshot to display the DB version
+    * The command and output for listing databases 
 * Push this work to your GitHub repo
 * Label the Issue 'submitted` and assign it to both instructors
 
@@ -80,7 +77,7 @@
 
 * Create the Issue `Install CM`
 * Assign yourself to the Issue and label it `started`
-* Install Cloudera Manager on a different node from MySQL
+* Install Cloudera Manager on a different node from MySQL or MariaDB
 * Configure the CM repo to install the latest release
   * List the command and output of `ls /etc/yum.repos.d` in `challenges/labs/2_cm.md`
   * Copy the `cloudera-manager.repo` file to `challenges/labs/2_cloudera-manager.repo.md`
