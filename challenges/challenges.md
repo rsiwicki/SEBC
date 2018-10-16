@@ -64,7 +64,7 @@
     * `hue`
     * `sentry`
 * Put the following in the file `challenges/labs/1_mysql.md`
-    * The hostname of your MySQL node 
+    * The hostname of your DB node 
     * The command screenshot to display the DB version
     * The command and output for listing databases 
 * Push this work to your GitHub repo
