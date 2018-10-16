@@ -283,8 +283,8 @@ _Use CM to answer the following questions. For some questions, search will help 
 ## <center> CM Lab
 ## <center> Upgrade Cloudera Manager
 
-* Upgrade to the latest **C5.9** release
-  * Use the [documentation here](http://www.cloudera.com/documentation/enterprise/latest/topics/cm_ag_ug_cm5.html)
+* Upgrade to the latest **C5.14** release
+  * Use the [documentation here](https://www.cloudera.com/documentation/enterprise/upgrade/topics/ug_cm_upgrade.html)
 * Use the API on the command line to:
   * Report the latest available version of the API
   * Report the CM version 
