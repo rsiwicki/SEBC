@@ -151,18 +151,6 @@
 
 ---
 
-### <center> Ben's Lab Environment
-
-* Use the domain `CLOUDERA.LOCAL`
-* Centrify is installed on clusters and nodes are AD-registered
-* All required certificates available in `/opt/cloudera/security`
-* Your PEM key password is `cloudera`
-* Anything else that needs a password, `Cloudera!` should work
-* All private keys for server certificates are PEM-encoded
-* Use public documentation to enable TLS levels 1, 2, and 3 for CM
-* Remember you can check certificates with `openssl s_client ...`
-
----
 
 ### <center> Should you run out of things to do
 
