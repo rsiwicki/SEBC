@@ -29,11 +29,9 @@
 ---
 <div style="page-break-after: always;"></div>
 
-## <center> Current Version & Resources
+## <center>Resources
 
-* C5.9 ==> [Hue 3.11](http://gethue.com/category/3-11/)
-    * Apache-licensed, not an ASF project
-    * Ported to HDP, MapR, Pivotal, IBM Big Insights
+
 * [Online demo available](http://demo.gethue.com/)
 * Drives [Cloudera Live](http://www.cloudera.com/content/cloudera/en/products-and-services/cloudera-live.html)
 * Active blogging on new developments: [gethue.com](http://gethue.com)
@@ -59,8 +57,6 @@
 * Supports [Impala load-balancing](http://gethue.com/hadoop-tutorial-how-to-distribute-impala-query-load/)
 * Multiple [query editors](http://gethue.com/hadoop-tutorial-how-to-distribute-impala-query-load/)
     * MySQL, Oracle,, PostgreSQL, sqlite3
-* [UI support for Pig](http://gethue.com/how-to-use-hcatalog-with-pig-in-a-secured-cluster/)
-* Evolving support for [Spark UI](http://gethue.com/use-the-spark-action-in-oozie/)
 
 ---
 <div style="page-break-after: always;"></div>
