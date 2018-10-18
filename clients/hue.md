@@ -19,8 +19,6 @@
 ## <center> <a name="hue_design_goals">HUE Design & Goals</a>
 
 * Customizable service portal
-    * Customer success story: [RainStor Embraces HUE](http://rainstor.com/rainstor-embraces-hue/)
-* Three client authentication modes
 * Graphical browsing and reporting
 * Application UIs
 * LDAP/Kerberos support
