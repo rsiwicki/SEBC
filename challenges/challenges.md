@@ -176,7 +176,6 @@
 * Commit any remaining changes in your repo and push them to GitHub
 * Indicate in a follow-up email that you have stopped pushing to your repo
   * You may continue working, if you like, after confirmation of receiving this note
-* Please fill out [this survey form](https://goo.gl/forms/pmHeHx03zRu3cnlc2)
 * Take it easy! You've worked very hard all week. Safe travels!
 
 ---
