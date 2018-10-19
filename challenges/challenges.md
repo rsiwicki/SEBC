@@ -28,7 +28,7 @@
 ## <center> Challenge Setup
 
 * Create the Issue `Challenges Setup`
-* Make you have both `mfernest` and `manojsundaram` as Collaborators
+* Make you have both `rsiwicki`, `rafaelarana` and `cfusi` as Collaborators
 * Assign the Issue to yourself and label it `started`
 * In the file `challenges/labs/0_setup.md`:
     * List the cloud provider you are using (AWS, GCE, Azure, other)
@@ -44,7 +44,7 @@
 * List the `/etc/group` entries for `hotels` and `shops` in your setup file
 * Push to your GitHub repo
 * Label your Issue `submitted` 
-* Assign the Issue to both instructors
+* Assign the Issue to the instructors
 
 ---
 <div style="page-break-after: always;"></div>
@@ -68,7 +68,7 @@
     * The command screenshot to display the DB version
     * The command and output for listing databases 
 * Push this work to your GitHub repo
-* Label the Issue 'submitted` and assign it to both instructors
+* Label the Issue 'submitted` and assign it to the instructors
 
 ---
 <div style="page-break-after: always;"></div>
@@ -89,7 +89,7 @@
   * Add the log line that contains the phrase "Started Jetty server"
   * Copy your `db.properties` file to `challenges/labs/2_db.properties.md`
 * Push to your GitHub repo and label the Issue 'submitted`
-* Assign the issue to both instructors
+* Assign the issue to the instructors
 
 ---
 <div style="page-break-after: always;"></div>
@@ -107,7 +107,7 @@
 * Login to Hue and install the Hive sample data
     * Capture the Hue home page to `challenges/labs/3_hue_installed.png`
 * Push this work to your GitHub repo and label the Issue `submitted`
-* Assign the issue to both instructors
+* Assign the issue to the instructors
 
 ---
 <div style="page-break-after: always;"></div>
@@ -118,15 +118,15 @@
 * Assign the issue to yourself and label it `started`
 * As user `raffles`, use `teragen` to generate a 51,200,000-record dataset into six files
     * Set the block size to 32 MB
-    * Name the target directory `tgen512m`
+    * Name the target directory `tgen512`
     * Use the `time` command to capture job duration
 * Put the following in the file `challenges/labs/4_teragen.md`
     * The full `teragen` command 
     * The output of the `time` command
-    * The command and output of `hdfs dfs -ls /user/raffles/tgen512m`
+    * The command and output of `hdfs dfs -ls /user/raffles/tgen512`
     * Show how many blocks are associated with this directory
 * Push this work to your GitHub repo and label the Issue `submitted`
-* Assign the issue to both instructors
+* Assign the issue to the instructors
 
 ---
 <div style="page-break-after: always;"></div>
@@ -135,6 +135,7 @@
 
 * Create the Issue `Kerberize cluster`
 * Assign the issue to yourself and label it `started`
+* You must use AES256
 * Install an MIT KDC on the same node as the MySQL server
   * Name your realm after your GitHub handle
   * Use `SG` as a suffix
@@ -150,25 +151,19 @@
     * Add the prefix `5_` and the suffix `.md` 
     * Example: `5_kdc.conf.md`
 * Push this work to your GitHub repo and label the Issue `submitted`
-* Assign the issue to both instructors
+* Assign the issue to the instructors
 
 ---
 <div style="page-break-after: always;"></div>
 
-## <center> Challenge 6 - Enable Sentry 
+## <center> Challenge 6 - Install Spark 2 
 
-* Create the Issue `Configure Sentry`
-* Install and configure Sentry
-* Add `raffles` as a Sentry administrator
-* Login to `beeline`
-  * Create an `retail` role that has rights to the `default` database
-    * Map the `shops` group to this role
-  * Create a `hospitality` role that has `SELECT` privileges only to the sample tables in `default`
-    * Map the `hotels` group to this role
-* Login to `beeline` with the principal for `fullerton`
-  * List the result of `SHOW TABLES;` in `challenges/labs/6_results.md`
-* Login again to `beeline` as the principal for `raffles`
-  * List the result of `SHOW TABLES;` in the same file
+* Create the Issue `install spark2`
+* Install and configure Spark2
+* Use the Cloudera documentation to install Spark 2.3
+* Screenshot your services in Cloudera manager and save to your repo - services.png
+* Run spark pi in YARN cluster mode - [Sparkpi ](https://www.cloudera.com/documentation/enterprise/5-14-x/topics/cdh_ig_running_spark_on_yarn.html#spark_yarn_sparkpi_example__section_rtp_xfv_hs)
+* Screenshot the output and save it to your repo - sparkpi.png
 * Push this work to your GitHub repo and label the Issue `submitted`
 * Assign the issue to both instructors
 * Push all work to your GitHub repo
